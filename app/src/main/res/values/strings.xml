@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Piperbike</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="weekly_goal_title">Weekly goal</string>
+    <string name="remaining_days">Remaining days:</string>
+    <string name="remaining_days_value">0</string>
 </resources>
