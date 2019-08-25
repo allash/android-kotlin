@@ -6,7 +6,7 @@ import dagger.Component
 import javax.inject.Singleton
 
 @Singleton
-@Component(modules = [(NetworkModule::class)])
+@Component(modules = [NetworkModule::class])
 interface ViewModelInjector {
     fun inject(activityListViewModel: ActivityListViewModel)
 
@@ -14,5 +14,6 @@ interface ViewModelInjector {
     interface Builder {
         fun build(): ViewModelInjector
         fun networkModule(networkModule: NetworkModule): Builder
+        // fun sharedPreferencesModule(sharedPreferencesModule: SharedPreferencesModule): Builder
     }
 }

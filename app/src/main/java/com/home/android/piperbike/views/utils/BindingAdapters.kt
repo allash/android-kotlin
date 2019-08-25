@@ -1,10 +1,10 @@
 package com.home.android.piperbike.views.utils
 
-import android.arch.lifecycle.MutableLiveData
-import android.arch.lifecycle.Observer
-import android.databinding.BindingAdapter
-import android.support.v7.widget.RecyclerView
 import android.widget.TextView
+import androidx.databinding.BindingAdapter
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.Observer
+import androidx.recyclerview.widget.RecyclerView
 
 @BindingAdapter("mutableText")
 fun setMutableText(view: TextView, text: MutableLiveData<String>?) {

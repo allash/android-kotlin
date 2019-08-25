@@ -1,8 +1,8 @@
 package com.home.android.piperbike.ui.activity
 
-import android.arch.lifecycle.MutableLiveData
+import androidx.lifecycle.MutableLiveData
+import com.home.android.piperbike.data.activities.model.DtoGetActivityResponse
 import com.home.android.piperbike.ui.BaseViewModel
-import com.home.android.piperbike.data.model.DtoGetActivityResponse
 
 class ActivityViewModel : BaseViewModel() {
     private val activityTitle = MutableLiveData<String>()

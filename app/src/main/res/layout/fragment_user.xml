@@ -5,8 +5,8 @@
              android:layout_height="match_parent"
              tools:context=".views.fragments.UserFragment">
 
-    <android.support.constraint.ConstraintLayout android:layout_width="match_parent"
-                                                 android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+                                                android:layout_height="wrap_content">
         <TextView
                 android:id="@+id/textWeeklyGoal"
                 android:layout_width="wrap_content"
@@ -43,5 +43,5 @@
                 app:layout_constraintTop_toBottomOf="@id/viewWeeklyGoalProgress"
                 android:text="@string/remaining_days"/>
 
-    </android.support.constraint.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

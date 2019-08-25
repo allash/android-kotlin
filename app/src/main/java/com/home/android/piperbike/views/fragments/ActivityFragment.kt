@@ -1,12 +1,12 @@
 package com.home.android.piperbike.views.fragments
 
-import android.arch.lifecycle.ViewModelProviders
-import android.databinding.DataBindingUtil
 import android.os.Bundle
-import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProviders
 import com.home.android.piperbike.R
 import com.home.android.piperbike.databinding.FragmentActivityListBinding
 import com.home.android.piperbike.ui.activity.ActivityListViewModel
@@ -14,7 +14,7 @@ import com.home.android.piperbike.ui.activity.ActivityListViewModel
 class ActivityFragment : Fragment() {
 
     private lateinit var viewModel: ActivityListViewModel
-    private lateinit var binding: FragmentActivityListBinding
+    lateinit var binding: FragmentActivityListBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

@@ -1,7 +1,7 @@
 package com.home.android.piperbike.views.activities
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.home.android.piperbike.R
 import com.home.android.piperbike.views.adapters.TabAdapter
 import com.home.android.piperbike.views.fragments.ActivityFragment
@@ -18,6 +18,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        // inject(this)
 
         val tabAdapter = TabAdapter(supportFragmentManager)
         tabAdapter.addFragment(UserFragment(), FRAGMENT_USER_FEED)
