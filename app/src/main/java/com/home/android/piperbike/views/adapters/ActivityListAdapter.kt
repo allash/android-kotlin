@@ -1,11 +1,11 @@
 package com.home.android.piperbike.views.adapters
 
-import android.databinding.DataBindingUtil
-import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
+import androidx.recyclerview.widget.RecyclerView
 import com.home.android.piperbike.R
-import com.home.android.piperbike.data.model.DtoGetActivityResponse
+import com.home.android.piperbike.data.activities.model.DtoGetActivityResponse
 import com.home.android.piperbike.databinding.ActivityItemCellBinding
 import com.home.android.piperbike.ui.activity.ActivityViewModel
 

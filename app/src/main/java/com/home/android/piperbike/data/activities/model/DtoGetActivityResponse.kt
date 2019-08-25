@@ -1,6 +1,7 @@
-package com.home.android.piperbike.data.model
+package com.home.android.piperbike.data.activities.model
 
-import java.util.*
+import java.util.Date
+import java.util.UUID
 
 data class DtoGetActivityResponse (
     var id: UUID,
