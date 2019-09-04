@@ -6,9 +6,10 @@ import android.graphics.Canvas
 import android.graphics.Paint
 import android.graphics.Path
 import android.graphics.RectF
-import android.support.v4.view.animation.FastOutSlowInInterpolator
 import android.util.AttributeSet
 import android.view.View
+import androidx.core.content.ContextCompat
+import androidx.interpolator.view.animation.FastOutSlowInInterpolator
 import com.home.android.piperbike.R
 import com.home.android.piperbike.views.utils.PathUtils
 
@@ -34,29 +35,29 @@ class WeeklyGoalProgressView : View {
     private var circleX: Float = 0f
     private var circleY: Float = 0f
 
-    var weeklyGoalCompletedValue: Float = 0f
-    var weeklyGoalEstimatedValue: Int = 0
+    private var weeklyGoalCompletedValue: Float = 0f
+    private var weeklyGoalEstimatedValue: Int = 0
 
     private val paintProgressArcPath = Paint().apply {
-        color = resources.getColor(R.color.colorAccent)
+        color = ContextCompat.getColor(context, R.color.colorAccent)
         isAntiAlias = true
     }
 
     private val paintBackgroundCircle = Paint().apply {
-        color = resources.getColor(R.color.colorSecondary)
+        color = ContextCompat.getColor(context, R.color.colorSecondary)
         strokeWidth = BACKGROUND_CIRCLE_STROKE_WIDTH
         style = Paint.Style.STROKE
         isAntiAlias = true
     }
 
     private val paintGoalCompleted = Paint().apply {
-        color = resources.getColor(R.color.colorWhite)
+        color = ContextCompat.getColor(context, R.color.colorWhite)
         textSize = 70f
         textAlign = Paint.Align.CENTER
     }
 
     private val paintGoalEstimated = Paint().apply {
-        color = resources.getColor(R.color.colorWhite)
+        color = ContextCompat.getColor(context, R.color.colorWhite)
         textSize = 40f
         textAlign = Paint.Align.CENTER
     }

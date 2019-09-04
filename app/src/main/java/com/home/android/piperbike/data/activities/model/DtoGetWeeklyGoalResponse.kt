@@ -1,4 +1,4 @@
-package com.home.android.piperbike.data.model
+package com.home.android.piperbike.data.activities.model
 
 data class DtoGetWeeklyGoalResponse(
     val title: String,

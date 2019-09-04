@@ -1,3 +1,3 @@
 package com.home.android.piperbike.data.exceptions
 
-open class NetworkException(error: Throwable) : RuntimeException()
+open class NetworkException(@Suppress("UNUSED_PARAMETER") error: Throwable) : RuntimeException()
